@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lakesight-personal-use-only');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Solway:wght@700&display=swap');
+@import url("https://db.onlinewebfonts.com/c/14679a7a97d388dac3a0380375ca4afe?family=Neometric+Alt+Heavy");
+@import url("https://db.onlinewebfonts.com/c/21553b99c039b140f424afd283a33017?family=Mark+Web+W04+Ultra");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@font-face {
+  font-family: 'Lakesight';
+  src: url('./Lakesight.woff2') format('woff2'),
+      url('./Lakesight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f1ed;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: all;
+  background-color: transparent;
+}
+
+.experience {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+/* NAVIGATION BAR */
+.nav {
+  background-color: transparent;
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 5%;
+  align-items: center;
+  z-index: 10;
+  bottom: 0;
+  margin-top: 2.5%;
+}
+
+.nav h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: #531500;
+  font-size: 2.5rem;
+  transition: 0.5s;
+  margin-top: 5%;
+}
+
+.links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.links {
+  height: 55px;
+  width: 200px;
+  background-color: #531500;
+  border-radius: 50px;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.links h1 {
+  color: #f1f1fb;
+  font-size: 1.5rem;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.linksone {
+  height: 55px;
+  width: 55px;
+  background-color: #531500;
+  border-radius: 50px;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.5s;
+  color: #000101;
+  margin-right: 25px;
+}
+
+.linksone a i {
+  scale: 1.5;
+  color: #000101;
+}
+
+/* SECTION ONE ELEMENTS */
+
+.title {
+  margin-top: 15%;
+  color: #531500;
+  font-size: 14rem;
+  z-index: 1;
+  line-height: 0rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.front {
+  color: #531500;
+  font-size: 14rem;
+  z-index: 6;
+  position: relative;
+  line-height: 0rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.center {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-color: #531500;
+  color: #531500;
+  border-style: dashed;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  position: relative;
+  bottom: 0;
+  align-self: center;
+  margin-bottom: 2.5%;
+}
+
+/* SECTION TWO ELEMENTS */
+
+.two {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left {
+  width: 500px;
+  margin-right: 0%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  background-color: transparent;
+}
+
+.right {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: left;
+  background-color: transparent;
+}
+
+
+.info-main {
+  margin-bottom: 5%;
+}
+
+.soda {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 0;
+  color: #531500;
+}
+
+.other {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ing {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #531500;
+}
+
+.long {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.drinkbox {
+  width: 400px;
+  height: 650px;
+  background-color: #531500;
+  border-radius: 100px;
+  /* border: solid #531500;
+  border-width: 5px;
+  border-style: dashed; */
+}
+
+.foodinfo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 350px;
+}
+
+.foodinfo {
+  display: flex;
+  line-height: 1rem;
+}
+
+.food-padding {
+  margin-left: 0%;
+}
+
+.food-text {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+
+.border {
+  width: 100%;
+  color: #531500;
+  height: 0px;
+  z-index: 1;
+  border-color: #531500;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.border-vertical {
+  width: 0px;
+  color: #531500;
+  height: 100%;
+  z-index: 1;
+  border-color: #531500;
+  border-style: solid;
+  border-width: 2px;
+}
+
+
+/* SECTION THREE ELEMENTS */
+
+.three {
+  display: flex;
+  justify-content: center;
+}
+
+.three-layover {
+  width: 100%;
+  height: 100vh;
+  background-color: #53150095;
+  backdrop-filter: blur(16px);
+  z-index: 5;
+}
+
+
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  width: 100vw;
+  height: 100vh;
+  z-index: 12;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #f1e3d9;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading-screen--hidden {
+  animation: fade-out 0.5s ease-in-out forwards 1s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading-screen__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #232223;
+  margin: 0;
+}
+
+.progress__container {
+  width: 100%;
+  height: 1rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.progress__bar {
+  width: 0;
+  height: 100%;
+  background-color: #232223;
+  transition: width 0.5s ease-in-out;
+}
+
+svg.squiggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vw;
+  z-index: 1;
+}
+
+svg.squiggle path {
+  stroke-width: 0.75rem;
+  opacity: 0;
+}
+
+
+
